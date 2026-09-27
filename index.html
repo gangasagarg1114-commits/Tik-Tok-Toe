@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Pro</title>
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Winner Message -->
+    <div class="msg-container hide">
+        <div class="msg">Winner</div>
+        <button class="New">New Game</button>
+    </div>
+
+    <div class="main-wrapper">
+        <main>
+            <h1>🎮 Tic Tac Toe</h1>
+
+            <!-- Turn Indicator -->
+            <h2 id="turn">Current Turn : O</h2>
+
+            <!-- Score Board -->
+            <div class="score-board">
+                <h3>🔵 O : <span id="oScore">0</span></h3>
+                <h3>🔴 X : <span id="xScore">0</span></h3>
+                <h3>🤝 Draw : <span id="drawScore">0</span></h3>
+            </div>
+
+            <!-- Mode Selection -->
+            <div class="mode-select">
+                <button id="pvpMode">👥 Player vs Player</button>
+                <button id="aiMode">🤖 Player vs AI</button>
+            </div>
+
+            <!-- Game Board -->
+            <div class="container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+
+            <!-- Reset -->
+            <button class="reset">🔄 Reset Game</button>
+        </main>
+
+        <!-- Footer Added Here -->
+        <footer class="footer">
+            <p>Made with ❤️ by <span>Ganga Sagar Tiwari</span></p>
+            <div class="social-links">
+                <a href="https://github.com/gangasagarg1114-commits" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gangasagar-softwareengineer/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/_ami_t_tiwari_/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/buildwithganga" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+            <p class="copy">© 2026 Ganga Sagar Tiwari. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="new.js"></script>
+
+</body>
+</html>

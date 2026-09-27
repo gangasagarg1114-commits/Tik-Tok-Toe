@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.allclock {
+    height: 550px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(198, 198, 198);
+    border-radius: 2rem;
+
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+    color: rgb(10, 0, 0);
+}
+
+.digitalClock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 280px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgb(0, 5, 13);
+     margin-bottom: 3rem;
+}
+
+.digitalClock:hover {
+transform:scale(1.05);
+
+
+}
+
+#liveClock {
+    font-size: 35px;
+    color: white;
+    font-family:monospace;
+}
+
+.stopclock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 180px;
+    width: 280px;
+    background-color: rgb(1, 206, 252);
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgb(1, 85, 116);
+}
+
+.stopclock:hover {
+    transform:scale(1.05);
+}
+
+#timer {
+     font-size: 35px;
+    color: white;
+    font-family:monospace;
+    margin-bottom: 2rem;
+}
+
+.buttons button {
+    height: 2rem;
+    width: 4rem;
+    margin: 1px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    
+
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+    background-color: rgb(1, 85, 116);
+    color: white;
+}
+

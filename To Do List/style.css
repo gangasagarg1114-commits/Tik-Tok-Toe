@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(66, 61, 44);
+    border: none;
+    border-radius: 1rem;
+    padding: 5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.to-do-container h1 {
+    margin-bottom: 2rem;
+    color: white;
+}
+
+
+#input {
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    
+}
+
+#addBtn {
+    height: 3rem;
+    width: 4rem;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(231, 92, 12);
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+    transform: scale(1.05);
+    background-color: rgb(103, 41, 4);
+    color: white;
+}
+
+#taskList {
+    font-size: 1rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    gap: 6px;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+
+
+

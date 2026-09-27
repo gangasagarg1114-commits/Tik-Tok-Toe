@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#5ee7df,#b490ca);
+    
+}
+
+.weather-container{
+    min-height: 660px;
+    height: auto;
+    width:500px;
+    padding:2rem;
+    border-radius:24px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    box-shadow:0 12px 35px rgba(0,0,0,.2);
+    text-align:center;
+    color:#fff;
+}
+
+.input-area{
+    display:flex;
+    gap:.70rem;
+    margin:1.5rem 0;
+}
+
+.input-area input{
+    flex:1;
+    padding:.9rem 1rem;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    margin-bottom:1rem ;
+    
+}
+
+.input-area button{
+    padding: 0 1rem;
+    border:none;
+    border-radius:12px;
+    background:#fff;
+    color:#5f5fd6;
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition:.2s;
+    margin-bottom:1rem ;
+}
+
+.input-area button:hover{
+    transform:translateY(-2px);
+}
+
+#weatherIcon{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin: 1rem;
+}
+
+.weather-information{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 10px;
+
+}
+
+#location{ 
+    font-family:serif;
+    font-size: 22px;
+}
+
+.details{
+    margin-top:1.5rem;
+    display:flex;
+    justify-content:space-between;
+    gap:1rem;
+}
+
+.details > div{
+    flex:1;
+    padding:1rem;
+    border-radius:16px;
+    background:rgba(255,255,255,.12);
+}
+
+.forecast-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.forecast-container > div{
+    padding: 12px 8px;
+    border-radius: 12px;
+    background:rgba(255,255,255,.12);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    
+}
+
+body.sunny{
+    background: linear-gradient(135deg,#f8c75f,#9df6fb);
+    color: black;
+}
+
+body.cloudy{
+    background: linear-gradient(135deg,#7baaca,#2c3e50);
+}
+
+body.rainy{
+    background: linear-gradient(135deg,#4b79a1,#283e51);
+}
+
+body.storm{
+    background: linear-gradient(135deg,#373b44,#4286f4);
+}
+
+body.snow{
+    background: linear-gradient(135deg,#e3b4b4,#274046);
+}
+
+@media(max-width:600px){
+
+    .weather-container{
+        width:90%;
+        padding:1.5rem;
+    }
+
+    .forecast-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
